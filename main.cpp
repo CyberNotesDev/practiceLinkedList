@@ -6,6 +6,13 @@ public:
     Node* next;
 };
 
+void printLinkedListSet(Node* n) {
+    while (n != NULL) {
+        std::cout << n->data << " ";
+        n = n->next;
+    }
+}
+
 int main() {
 
     // Declaring values to be null and making them new Nodes
@@ -28,6 +35,8 @@ int main() {
 
     tail->data = 3;
     tail->next = NULL;
+
+    printLinkedListSet(head);
 
     return 0; 
 }
